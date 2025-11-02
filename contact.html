@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+    <title>Kontakt - Ateljé Oroshjärta</title>
+</head>
+
+<body>
+    <main>
+        <header id="header">
+            <nav>
+                <ul class="mainMenu">
+                    <li id="mainMenuGallery"><a href="gallery.html">Galleri</a></li>
+                    <li><a href="about.html">Om mig</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="index.html">Hem</a></li>
+                </ul>
+            </nav>
+            <a href="index.html"><img src="images/logoRund.png" title="Till startsidan." alt="logga" id="logo"
+                    width="100" height="100"></a>
+            <img id="headerImage" src="images/header.JPG" alt="Närbild på sten och gröna växter">
+            <div id="headerText">
+                <h1>Ateljé Oroshjärta</h1>
+                <h2>Bild & Form <br> av <br> Madicken Stjernlöf</h2>
+                <a class="linkToGallery" href="gallery.html">Utforska galleriet</a>
+            </div>
+        </header>
+        <div class="contact-container">
+            <div class="contact">
+                <h2>Kontakta mig</h2>
+                <p>
+                    Om du har några frågor så är du varmt välkommen att kontakta mig.
+                    Du kan alltid kontakta mig via formuläret som du finner längre ned på denna sida.
+                    Det går också bra att ringa eller besöka mig i min ateljé.
+                </p>
+                <h3>Kontaktuppgifter</h3>
+                <p>
+                    <b>Telefon:</b> <br>
+                    012-345 67 89 <br>
+                </p>
+                <p>
+                    <b>Adress:</b><br>
+                    Hittepågatan 10, <br>
+                    123 45 Låtsasköping
+                </p>
+                <p>
+                    <b>Öppettider:</b> <br>
+                    måndag - fredag: 10-16
+                </p>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>Kontaktformulär:</legend>
+                    <div id="messagesToUser">
+                        <ul id="errorList"></ul>
+                        <ul id="messageSent"></ul>
+                    </div>
+                    
+                    <div>
+                        <label for="fullname" class="titleForm">Namn:</label><br>
+                        <input type="text" id="fullname" name="name" autocomplete="name" placeholder="Förnamn Efternamn" size="30"
+                            maxlength="100">
+                    </div>
+                    <div>
+                        <label for="email" class="titleForm">E-postadress:</label><br>
+                        <input type="text" id="email" name="email" autocomplete="email" placeholder="namn@domän.se" size="30"
+                            maxlength="100">
+                    </div>
+                    <div>
+                        <label for="message" class="titleForm">Meddelande:</label><br>
+                        <textarea id="message" name="message" autocomplete="off" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="formButtons">
+                        <button id="send" type="submit">Skicka</button>
+                        <button id="clear" type="reset">Rensa formulär</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Fredrika Stjernlöf - Mail: <a href="mailto:frst2501@student.miun.se">
+                frst2501@student.miun.se</a><br>
+            Webbutveckling 1 - 2025-09-21
+        </p>
+    </footer>
+</body>
+
+</html>
